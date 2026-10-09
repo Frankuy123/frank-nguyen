@@ -1,1 +1,62 @@
-<!-- Add your index page here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Search for Mango</title>
+</head>
+
+<body>
+    <header>
+        <h1>The Search for Mango</h1>
+        <p>An interactive mystery story by Frank</p>
+
+        <a href="about.html">About Frank</a>
+    </header>
+
+    <main>
+        <h2>Prologue</h2>
+
+        <p>
+            You wake up on a Saturday morning and head to the kitchen to feed Mango,
+            your dog. However, when you call his name, there is no response.
+        </p>
+
+        <p>
+            Mango's bowl is untouched, and the back door is wide open. Mango has gone
+            missing! You need to gather clues, check nearby areas, and ask people for
+            help before time runs out.
+        </p>
+
+        <h2>Start the Search</h2>
+
+        <form action="game.html" method="get">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <p>Where will you search first?</p>
+
+            <input type="radio" id="living-room" name="location" value="living-room" required>
+            <label for="living-room">Search the living room</label>
+
+            <br>
+
+            <input type="radio" id="backyard" name="location" value="backyard">
+            <label for="backyard">Go to the backyard</label>
+
+            <br>
+
+            <input type="radio" id="park" name="location" value="park">
+            <label for="park">Walk toward the park</label>
+
+            <br><br>
+
+            <button type="submit">Begin the Search</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Created by Frank.</p>
+    </footer>
+</body>
+</html>
