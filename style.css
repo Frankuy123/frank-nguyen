@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+body {
+  background-color: #111722;
+  color: #f0eee8;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1.25rem;
+}
+
+h1, h2, h3, h4 {
+  color: #f4c95d;
+  font-size: 32px;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.subheading {
+  background-color: #202938;
+  color: #f0eee8;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border: 2px solid #f4c95d;
+  border-radius: 6px;
+  margin: 1.5rem;
+  padding: 1rem;
+}
+
+#inventory-display {
+  font-size: 20px;
+  color: #f4c95d;
+  background-color: #283027;
+  padding: 15px;
+  border: 1px solid #54634a;
+  border-radius: 6px;
+}
+
+.card {
+  padding: 20px;
+  border: 2px solid #f4c95d;
+  border-radius: 8px;
+  background-color: #202938;
+  text-align: left;
+}
