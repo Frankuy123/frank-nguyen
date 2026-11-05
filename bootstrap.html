@@ -1,58 +1,75 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1 class="display-1 fg-danger border border-white ">Hello, world!</h1>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
-  </body>
-<div class="container">
-<div id="carouselExample" class="carousel carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="Chicken.jpeg" class="d-block w-100 " rounded-5 alt="Chicken">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lost Chicken</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+</head>
+<body>
+  <div class="container py-4">
+    <h1 class="display-1 text-danger text-center border border-dark">
+      Hello, world!
+    </h1>
+
+    <h2 class="text-center">Have you seen our chicken?</h2>
+    <p>Our chicken is missing, and we are trying to find her.</p>
+    <p>She may be near the back door or wandering around the neighborhood.</p>
+    <p>Please look at the pictures and let us know if you see her.</p>
+
+    <div id="carouselExample" class="carousel carousel-fade mb-4">
+      <div class="carousel-inner rounded-5">
+        <div class="carousel-item active">
+          <img src="Chicken.jpeg" class="d-block w-100 rounded-5" alt="Our chicken">
+        </div>
+        <div class="carousel-item">
+          <img src="PawPrint.jpeg" class="d-block w-100 rounded-5" alt="Paw print">
+        </div>
+        <div class="carousel-item">
+          <img src="BackDoor.jpeg" class="d-block w-100 rounded-5" alt="Back door">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button"
+              data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button"
+              data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-item">
-      <img src="PawPrint.jpeg" class="d-block w-100" rounded-5 alt="PawPrint">
-    </div>
-    <div class="carousel-item">
-      <img src="BackDoor.jpeg" class="d-block w-100" rounded-5 alt="BackDoor">
+
+    <a href="https://www.youtube.com/@fronk4312/videos" class="btn btn-primary btn-lg">
+      Sub to my youtube channel
+    </a>
+    <a href="https://www.google.com/search?q=lost+chicken+help" class="btn btn-secondary btn-lg">
+      Search for help
+    </a>
+
+    <div class="mt-4">
+      <label for="chickenSelect" class="form-label">
+        Which quote do you like most?
+      </label>
+      <select id="chickenSelect" class="form-select">
+        <option value="" selected disabled>Choose one…</option>
+        <option value="1">He's wired in</option>
+        <option value="2">Are you rushing or dragging?</option>
+        <option value="3">I hope the chicken finds her way home.</option>
+        <option value="4">Thank you for the roses</option>
+        <option value="5">For example, nothing</option>
+      </select>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<button type="button" class="btn btn-primary btn-lg">Large button</button>
-<button type="button" class="btn btn-secondary btn-lg">Large button</button>
 
-  <div class="form-field">
-  <label for="exampleFormControlSelect2" class="form-label">Which thing do you resonate the most?</label>
-  <select class="form-control" id="exampleFormControlSelect2">
-    <option>Choose one…</option>
-    <option value="1">he's wired in</option>
-    <option value="2">are you rushing or dragging</option>
-    <option value="3">It was highly Prophesied that the burger king must marry the dairy queen </option>
-    <option value="4">thank you for the roses</option>
-    <option value="5">For example nothing</option>
-  </select>
-</div>
-    
-
-
-
-  </div>
-
-      
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+          crossorigin="anonymous"></script>
+</body>
 </html>
-
