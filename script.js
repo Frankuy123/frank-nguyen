@@ -240,6 +240,7 @@ choicesContainer.innerHTML = "";
 scene.choices.forEach(function (choice) {
 const button = document.createElement("button");
 
+button.className = "btn btn-outline-warning";
 button.textContent = choice.text;
 
 button.addEventListener("click", function () {
@@ -333,5 +334,3 @@ function checkEnding() {
 
     // This updates the screen with the current scene
     updateScene(currentScene);
-
-

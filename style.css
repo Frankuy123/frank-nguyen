@@ -6,34 +6,53 @@ body {
   font-family: 'Nunito Sans', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 1.25rem;
+  padding: 0;
 }
 
 h1, h2, h3, h4 {
   color: #f4c95d;
-  font-size: 32px;
   font-family: 'Nunito Sans', Arial, sans-serif;
   text-align: center;
 }
 
-.subheading {
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.navbar-brand {
+  color: #f4c95d;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #ffe08a;
+}
+
+.story-panel {
   background-color: #202938;
+  border: 1px solid #54634a;
+  border-radius: 0.75rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.subheading {
   color: #f0eee8;
   text-align: center;
   letter-spacing: 0.1em;
   border: 2px solid #f4c95d;
   border-radius: 6px;
-  margin: 1.5rem;
-  padding: 1rem;
+  margin: 0 0 1.5rem;
+  padding: 0.75rem;
 }
 
 #inventory-display {
-  font-size: 20px;
+  overflow-wrap: anywhere;
+}
+
+.status-value {
   color: #f4c95d;
-  background-color: #283027;
-  padding: 15px;
-  border: 1px solid #54634a;
-  border-radius: 6px;
+  font-size: 1.15rem;
+  font-weight: 700;
 }
 
 .card {
@@ -42,4 +61,26 @@ h1, h2, h3, h4 {
   border-radius: 8px;
   background-color: #202938;
   text-align: left;
+}
+
+#message-display:empty {
+  display: none;
+}
+
+.form-control {
+  border-color: #54634a;
+}
+
+.form-control:focus {
+  border-color: #f4c95d;
+  box-shadow: 0 0 0 0.25rem rgb(244 201 93 / 25%);
+}
+
+.form-check-input:checked {
+  background-color: #a77c16;
+  border-color: #f4c95d;
+}
+
+footer {
+  color: #c5c7c9;
 }

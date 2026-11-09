@@ -3,54 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Search for Mango</title>
-    <script src="script.js" defer></script>
+    <title>Play The Search for Mango</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-            <ul>
-                <li><a href="game.html">Play the game</a></li>
-            </ul>
-            <ul>
-                <li><a href="about.html">About the creator</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-warning">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">The Search for Mango</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="game.html">Play the Game</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container py-4 text-center">
+        <h1>The Search for Mango</h1>
+        <p class="lead">Follow the clues and bring Mango home.</p>
     </header>
 
-    <main>
-        <header>
-            <h1 id="scene-title"></h1>
-            <h2 id="character-name"></h2>
-        </header>
+    <main class="container pb-5">
+        <div class="row g-4">
+            <section class="col-lg-8">
+                <div class="story-panel h-100">
+                    <h2 id="scene-title"></h2>
+                    <p id="character-name" class="text-warning fw-semibold"></p>
+                    <p id="scene-text"></p>
+                    <div id="choices-container" class="d-flex flex-wrap gap-2 mt-4"></div>
+                    <p id="message-display" class="alert alert-warning mt-3 mb-0" role="status"></p>
+                </div>
+            </section>
 
-        <section>
-            <p id="scene-text"></p>
-        </section>
-
-        <section>
-            <div id="choices-container" class="card">
-        </section>
-
-        <section>
-            <p>Turns left:</p>
-            <ul>
-                <li id="turns-display">7</li>
-            </ul>
-
-            <p>Inventory:</p>
-            <ul>
-                <li id="inventory-display">empty</li>
-            </ul>
-
-            <p id="message-display"></p>
-        </section>
+            <aside class="col-lg-4">
+                <div class="story-panel mb-4">
+                    <h2 class="h4">Search Status</h2>
+                    <p class="mb-1">Turns left</p>
+                    <p id="turns-display" class="status-value mb-3">7</p>
+                    <p class="mb-1">Clues collected</p>
+                    <p id="inventory-display" class="status-value mb-0">empty</p>
+                </div>
+                <div class="story-panel">
+                    <h2 class="h4">Need a fresh start?</h2>
+                    <p>Return home to read the prologue and begin again.</p>
+                    <a class="btn btn-outline-warning" href="index.html">Back to Home</a>
+                </div>
+            </aside>
+        </div>
     </main>
 
-    <footer></footer>
+    <footer class="container border-top border-secondary py-3 text-center">
+        <p class="mb-0">Created by Frank.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
